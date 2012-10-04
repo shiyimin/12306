@@ -9,7 +9,9 @@
 3. 打开命令行，执行（如果是windows平台，在下面的命令后面加.bat后缀）：
    
    vagrant box add base http://files.vagrantup.com/lucid32.box
+
    vagrant init
+
    vagrant up
    
 4. 如果是windows平台，用putty登录：127.0.0.1:2222，用户名/密码：vagrant/vagrant
@@ -20,7 +22,9 @@
 6. 进入工作主目录 - 这个虚拟机上的主目录是你宿主机执行vagrant命令的目录
    
    cd /vagrant
+
    cd server-core/cn12306
+
    mvn compile test
    
 7. 顺利的话,你应该可以看到BUILD SUCCESS的字样,如有任何问题,欢迎到下面的链接上报BUG:
