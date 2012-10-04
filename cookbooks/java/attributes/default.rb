@@ -30,7 +30,7 @@ when "centos","redhat","fedora","scientific","amazon"
   default['java']['java_home'] = "/usr/lib/jvm/java"
 when "freebsd"
   default['java']['java_home'] = "/usr/local/openjdk#{java['jdk_version']}"
-when "arch"
+when "arch","ubuntu"
   default['java']['java_home'] = "/usr/lib/jvm/java-#{java['jdk_version']}-openjdk"
 else
   default['java']['java_home'] = "/usr/lib/jvm/default-java"
