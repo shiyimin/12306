@@ -11,6 +11,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "mysql::server"
     chef.add_recipe "java"
     chef.add_recipe "maven"
+    chef.add_recipe "boost"
     chef.json = {
       "mysql" => {
         "server_root_password" => "g0L1om@",
