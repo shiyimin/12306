@@ -47,4 +47,16 @@ enum
 	TRAINCOUNT
 };
 
+enum
+{
+	硬座,
+	硬卧,
+	软卧,
+	二等座,
+	一等座,
+	商务座,
+	无座,
+	SEAT_TYPE_COUNT
+};
+
 #endif
