@@ -237,6 +237,8 @@ BOOST_AUTO_TEST_CASE(演示查票方法)
 	BOOST_CHECK(pResult->size() == 1);
 	BOOST_CHECK(pResult->at(0) == G107);
 
+	dump_graph();
+
 	delete pResult;
 }
 

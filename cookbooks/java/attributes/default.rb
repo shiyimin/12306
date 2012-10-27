@@ -21,8 +21,10 @@
 default['java']['remove_deprecated_packages'] = false
 
 # default jdk attributes
-default['java']['install_flavor'] = "openjdk"
-default['java']['jdk_version'] = '6'
+# default['java']['install_flavor'] = "openjdk"
+# default['java']['jdk_version'] = '6'
+default['java']['install_flavor'] = "oracle"
+default['java']['jdk_version'] = '7'
 default['java']['arch'] = kernel['machine'] =~ /x86_64/ ? "x86_64" : "i586"
 
 case platform
@@ -37,7 +39,7 @@ else
 end
 
 # If you change this to true, you can download directly from Oracle
-default['java']['oracle']['accept_oracle_download_terms'] = false
+default['java']['oracle']['accept_oracle_download_terms'] = true
 
 # direct download paths for oracle, u been warned!
 
